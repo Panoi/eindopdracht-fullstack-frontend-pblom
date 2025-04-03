@@ -6,6 +6,7 @@ import Register from "./pages/Register.jsx";
 import Profile from "./pages/Profile.jsx";
 import Proposal from "./pages/Proposal.jsx";
 import ProposalOverview from "./pages/ProposalOverview.jsx";
+import NavBar from "./components/NavBar.jsx";
 
 function App() {
 
@@ -13,7 +14,8 @@ function App() {
   return (
 
     <>
-
+<NavBar />
+      <div className="content">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login  />} />
@@ -22,7 +24,7 @@ function App() {
         <Route path="/proposal" element={<Proposal /> } />
         <Route path="/proposals" element={<ProposalOverview /> } />
       </Routes>
-
+    </div>
     </>
   )
 }
