@@ -1,17 +1,18 @@
 import "./UserForm.css"
 
-function UserForm({inputType, inputName, inputLabel, inputId, validationRules, register, errors}) {
+function UserForm({inputType, inputName, inputLabel, validationRules, register, errors}) {
 
     return (
         <>
-            <label htmlFor={inputId} className="form-label">
+            <label htmlFor={inputName}>
                 {inputLabel}
+            </label>
                 <input
+                    placeholder={inputName}
                     type={inputType}
-                    id={inputId}
+                    id={inputName}
                     {...register(inputName, validationRules)}
                 />
-            </label>
             {errors[inputName] && <p>{errors[inputName].message}</p>}
         </>
     );
