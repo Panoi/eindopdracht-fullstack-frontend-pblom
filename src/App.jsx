@@ -6,7 +6,7 @@ import Register from "./pages/Register.jsx";
 import Profile from "./pages/Profile.jsx";
 import Proposal from "./pages/Proposal.jsx";
 import ProposalOverview from "./pages/ProposalOverview.jsx";
-import NavBar from "./components/NavBar.jsx";
+import NavBar from "./components/navbar/NavBar.jsx";
 
 function App() {
 
